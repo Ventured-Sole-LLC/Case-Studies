@@ -1,8 +1,9 @@
 # Case Studies: Ventured Sole LLC
 
-Four real projects, each solving a distinct operational problem across government, healthcare, and regulated industries.
+Three real projects, each solving a distinct operational problem across government, healthcare, and regulated industries.
 
-- **[SoleLoop](https://github.com/Ventured-Sole-LLC/SoleLoop):** serverless AWS change request and approval platform, architected and deployed end to end (Lambda, API Gateway, DynamoDB, Cognito, IAM, Terraform, GitHub Actions CI/CD with OIDC federation, CloudWatch alarms, SNS alerting, and structured logging)
-- **[ChainLoop](https://github.com/Ventured-Sole-LLC/ChainLoop):** event-driven chain-of-custody platform for time-sensitive medical logistics, built on OpenTofu with an EventBridge custody backbone, custody events modeled on FHIR Specimen/Task resources, and eight documented architecture decision records
-- **Compliance Automation Platform:** CMMC compliance blueprint generator for small defense contractors, built on Supabase with Claude API-driven automation
-- **Municipal Prime Contracting:** end-to-end ownership of a municipal technology engagement, spanning vendor management, stakeholder communication, and direct technical delivery
+**SoleLoop**: A municipal client had no formal system for managing change requests and approvals, requests were getting lost in email and paperwork. Built a serverless AWS platform (Lambda, API Gateway, DynamoDB, Cognito, IAM) from the ground up, then rebuilt the infrastructure as Terraform, with GitHub Actions CI/CD secured via OIDC federation, CloudWatch alarms, SNS alerting, and structured logging. Reduced approval turnaround from up to 15 days to 2 days or less, an 87 percent reduction, while giving the client a full audit trail from submission to decision.
+
+**ChainLoop**: A courier client experienced a real incident where temperature-sensitive medical specimens sat uncollected for a full day with no system flagging the stale handoff. Architecting an event-driven chain-of-custody platform on OpenTofu, with an EventBridge custody backbone, SLA-aware DynamoDB design, and custody events modeled on FHIR Specimen/Task resources for future healthcare interoperability. [View repository](https://github.com/Ventured-Sole-LLC/ChainLoop)
+
+**Compliance Automation Platform**: Small defense contractors facing the CMMC federal compliance framework lack the resources to interpret it, with consulting costs pricing most of them out entirely. Architected a self-service platform translating CMMC into actionable, evidence-backed compliance blueprints, built on Supabase with Claude API-driven automation.
