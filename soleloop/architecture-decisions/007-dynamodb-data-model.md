@@ -11,9 +11,9 @@ tradeoffs we don't want.
 
 Two tables:
 
-- `SoleLoopEventLog` — the full history. Every event ever recorded,
+- `SoleLoopEventLog`. The full history. Every event ever recorded,
   never edited or deleted.
-- `SoleLoopProjection` — just the current status of each request,
+- `SoleLoopProjection`. Just the current status of each request,
   kept up to date as new events come in.
 
 ## Reasoning
